@@ -15,7 +15,7 @@ const Register = () => {
   const submitHandler = async (values) => {
     try {
       setLoading(true);
-      await axios.post("http://localhost:8000/api/v1/users/register", values);
+      await axios.post("https://expanse-backend.vercel.app/api/v1/users/register", values);
       message.success("Registered Successfully");
       setLoading(false);
       navigate("/login");

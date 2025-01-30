@@ -157,7 +157,7 @@ const Homepage = () => {
       } 
       else {
         // Add a new transaction
-        const response = await axios.post("http://localhost:8000/api/v1/transections/add-transection", {
+        const response = await axios.post("https://expanse-backend.vercel.app/api/v1/transections/add-transection", {
           ...values,
           userid: user._id,
         });
