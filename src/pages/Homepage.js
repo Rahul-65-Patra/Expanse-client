@@ -85,7 +85,7 @@ const Homepage = () => {
       try {
         const user = JSON.parse(localStorage.getItem("user"));
         setLoading(true);
-        const res = await axios.post("http://localhost:8000/api/v1/transections/get-transection", {
+        const res = await axios.post("https://expanse-backend.vercel.app/api/v1/transections/get-transection", {
           userid: user._id,
           frequency,
           selectedDate,
@@ -107,7 +107,7 @@ const Homepage = () => {
   const handleDelete = async (record) => {
     try {
       setLoading(true);
-      await axios.post("http://localhost:8000/api/v1/transections/delete-transection", {
+      await axios.post("https://expanse-backend.vercel.app/api/v1/transections/delete-transection", {
         transactionId: record._id,
       });
           // Remove the deleted transaction from the list
@@ -135,7 +135,7 @@ const Homepage = () => {
 
       if (editable) {
          // Edit the existing transaction 
-         await axios.post("http://localhost:8000/api/v1/transections/edit-transection", {
+         await axios.post("https://expanse-backend.vercel.app/api/v1/transections/edit-transection", {
           payload: {
             ...values,
             userId: user._id,
