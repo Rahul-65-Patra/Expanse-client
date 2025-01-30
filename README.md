@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Expenza (Expense Management System using MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+The Expense Management System is a robust web-based application designed to help users efficiently track and manage their daily expenses. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), this scalable, responsive, and user-friendly system empowers individuals and organizations to gain insights into their financial habits and make informed decisions.
 
-## Available Scripts
+## Objectives
+1. Simplify expense tracking for individuals and organizations.
+2. Provide detailed insights into spending patterns to enable better financial management.
+3. Offer a platform for users to create, update, and delete expenses and categories.
+4. Generate comprehensive reports based on user-defined time periods and categories.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### User Authentication and Authorization
+1. Secure sign-up and login for personal accounts.
+2. Role-based access control for administrative tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Expense and Category Management
+1. Create, update, and delete expense entries and categories.
+2. Track expenses by date, category, and description.
+3. Attach receipts or relevant documents to expense entries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Dashboard and Reporting
+1. Visual dashboard displaying:
+    - Total expenses.
+    - Expenses by category.
+    - Recent transactions.
+2. Generate reports based on selected date ranges and categories.
+    - Use pie charts and bar graphs for detailed insights into spending patterns.
 
-### `npm test`
+### Responsive User Interface
+1. Clean, responsive design that works seamlessly across desktops, tablets, and mobile devices.
+2. Reusable UI components built with React.js.
+3. Background effects powered by the tsparticles library.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Architecture
 
-### `npm run build`
+### Frontend:
+- **React.js** for building the user interface.
+- **tsparticles** library for awesome background effects.
+- Additional libraries: **unique-names-generator**, **react-datepicker**, **moment**.
+- Responsive design using CSS frameworks like **Bootstrap** and **Material-Icons**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend:
+- **Node.js** and **Express.js** for building a RESTful API.
+- Authentication and authorization using **JSON Web Tokens (JWT)**.
+- Middleware to protect endpoints.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Database:
+- **MongoDB** for storing all data (user information, expense entries, categories).
+- **Mongoose ORM** for schema definition and validation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deployment:
+- Frontend deployed on **AWS**.
+- Backend deployed on **Render**.
+- Set up Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated builds and deployments.
 
-### `npm run eject`
+## Badges
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Add badges from somewhere like: [shields.io](https://shields.io/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT](https://choosealicense.com/licenses/mit/)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
